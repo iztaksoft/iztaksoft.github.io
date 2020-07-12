@@ -1,1 +1,0 @@
-# iztaksoft.github.io
