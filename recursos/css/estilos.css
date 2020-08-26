@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    font-family: 'Segoe UI';
+}
+
+.active {
+    background: #363636;
+}
+
+.wrap {
+    width: 1200px;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+nav {
+    background: #000000;
+    z-index: 1000;
+    margin: 15px auto;
+}
+
+nav ul.tabs {
+    list-style: none;
+}
+
+nav ul.tabs li {
+    display: inline-block;
+    position: relative;
+    width: 24.5%;
+    text-align: center;
+}
+
+nav ul.tabs li:hover {
+    background: #363636;
+}
+
+nav ul.tabs li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav ul.tabs li a span {
+    margin-right: 10px;
+}
+
+nav ul.tabs li:hover .children {
+    display: block;
+}
+
+nav ul.tabs li .children {
+    display: none;
+    background: #000000;
+    position: absolute;
+    width: 150%;
+    z-index: 1000;
+}
+
+nav ul.tabs li .children li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+nav ul.tabs li .children li a {
+    display: block;
+}
+
+nav ul.tabs li .children li a span {
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+nav ul.tabs li .caret {
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+div.secciones {
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+}
+
+div.secciones>p {
+    text-align: justify;
+}
+
+.btn_control {
+    margin-top: 10px;
+    padding: 15px;
+    color: #ffffff;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.contenido_control {
+    display: none;
+    border: 2px solid transparent;
+    padding: 5px;
+    width: 91%;
+    overflow: auto;
+}
+
+.modal-lg {
+    width: 100%;
+}
+
+.pestania_dia {
+    text-align: center;
+    width: 15%;
+}
+
+.vertical_titulo {
+    writing-mode: vertical-lr;
+    /*text-orientation: upright;*/
+    float: left;
+    width: 50px;
+    height: 120%;
+    text-align: center;
+    transform: rotate(180deg);
+    font-weight: bold;
+    text-shadow: 1px 1px pink, 2px 2px pink, 3px 3px pink;
+}
+
+.info_ejercicio {
+    float: right;
+}
+
+.info_ejercicio>span {
+    font-size: 150%;
+}
+
+.titulares_ejercicios {
+    border-left: 5px solid pink;
+}
+
+@media screen and (max-width: 450px) {
+    div.secciones {
+        padding: 20px;
+    }
+}
